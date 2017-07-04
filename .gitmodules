@@ -1,0 +1,15 @@
+[submodule "production/modules/roles"]
+	path = production/modules/roles
+	url = git@github.com:attachmentgenie/attachmentgenie-roles.git
+[submodule "production/modules/stacks"]
+	path = production/modules/stacks
+	url = git@github.com:attachmentgenie/attachmentgenie-stacks.git
+[submodule "production/modules/profiles"]
+	path = production/modules/profiles
+	url = git@github.com:attachmentgenie/attachmentgenie-profiles.git
+[submodule "production/modules/stdlib"]
+	path = production/modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "production/modules/firewall"]
+	path = production/modules/firewall
+	url = https://github.com/puppetlabs/puppetlabs-firewall.git

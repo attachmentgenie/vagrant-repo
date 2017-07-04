@@ -1,0 +1,12 @@
+---
+nodes:
+    - name: gitlab
+      hostname: gitlab.repo.vagrant
+      box: bento/centos-7.3
+      ip: 192.168.54.42
+    - name: pulp
+      hostname: pulp.repo.vagrant
+      box: bento/centos-7.3
+      ip: 192.168.54.43
+puppet_version: 4.10.4
+virtualbox_group: '/Vagrant/repo'
