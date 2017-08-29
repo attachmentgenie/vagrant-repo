@@ -13,3 +13,15 @@
 [submodule "production/modules/firewall"]
 	path = production/modules/firewall
 	url = https://github.com/puppetlabs/puppetlabs-firewall.git
+[submodule "production/modules/aptly"]
+	path = production/modules/aptly
+	url = https://github.com/gds-operations/puppet-aptly.git
+[submodule "production/modules/apt"]
+	path = production/modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
+[submodule "production/modules/nginx"]
+	path = production/modules/nginx
+	url = https://github.com/voxpupuli/puppet-nginx.git
+[submodule "production/modules/concat"]
+	path = production/modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat.git
