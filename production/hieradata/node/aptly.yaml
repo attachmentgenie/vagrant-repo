@@ -1,8 +1,8 @@
 ---
-profiles::nginx::vhosts:
+profiles::repo::aptly: true
+profiles::repo::aptly::enable_repo: true
+profiles::website::nginx: true
+profiles::website::nginx::daemon_user: root
+profiles::website::nginx::vhosts:
   aptly.repo.vagrant:
     www_root: '/var/lib/aptly/public'
-profiles::aptly::enable_repo: true
-profiles::nginx::daemon_user: root
-stacks::repo::aptly: true
-stacks::website::nginx: true
