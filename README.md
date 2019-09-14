@@ -1,4 +1,4 @@
-#  vagrant-example
+#  vagrant-repo
 
 vagrant starter kit 
 
@@ -16,29 +16,16 @@ vagrant starter kit
 ## Setup
     vagrant up
 
-## Puppet Development
+## Inspec tests
 
-### Hiera
+    bundle exec rake
+    bundle exec rake inspec[proxy] 
 
-the puppet master deploys a fairly default hiera.yaml
-
-    [vagrant@puppetmaster ~]$ cat /etc/puppet/hiera.yaml 
-    ---
-    # Managed by puppet
-    :backends:
-      - yaml
-    :hierarchy:
-      - "node/%{::hostname}"
-      - "environment/%{::environment}"
-      - "common"
-    :yaml:
-      :datadir: "/var/lib/hiera"
-
-### Manifests
-
-Place your own manifests in this directory. A fairly standard default.pp is already present.
-
-### Modules
-
-Place your own modules in this directory. 5 modules are already present one of which is stdlib.
-
+## TLDR
+    
+    - name: aptly
+      public_vhosts:
+        - http://aptly.repo.vagrant
+    - name: nexus
+      public_vhosts:
+        - http://nexus.repo.vagrant

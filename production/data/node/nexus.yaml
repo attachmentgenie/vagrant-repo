@@ -1,0 +1,9 @@
+---
+profiles::repo::nexus: true
+profiles::runtime::java: true
+profiles::runtime::java::package: 'java-1.8.0-openjdk-devel'
+profiles::website::nginx: true
+profiles::website::nginx::vhosts:
+  nexus.repo.vagrant:
+    proxy: 'http://127.0.0.1:8081'
+...

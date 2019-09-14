@@ -2,6 +2,10 @@
 nodes:
     - name: aptly
       hostname: aptly.repo.vagrant
-      box: bento/debian-9.1
+      box: bento/debian-9.6
       ip: 192.168.54.44
+    - name: nexus
+      hostname: nexus.repo.vagrant
+      box: bento/centos-7.6
+      ip: 192.168.54.45
 virtualbox_group: '/Vagrant/repo'

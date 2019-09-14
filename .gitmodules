@@ -22,3 +22,12 @@
 [submodule "production/modules/concat"]
 	path = production/modules/concat
 	url = https://github.com/puppetlabs/puppetlabs-concat.git
+[submodule "production/modules/nexus"]
+	path = production/modules/nexus
+	url = https://github.com/hubspotdevops/puppet-nexus.git
+[submodule "production/modules/wget"]
+	path = production/modules/wget
+	url = https://github.com/voxpupuli/puppet-wget.git
+[submodule "production/modules/java"]
+	path = production/modules/java
+	url = https://github.com/puppetlabs/puppetlabs-java.git
